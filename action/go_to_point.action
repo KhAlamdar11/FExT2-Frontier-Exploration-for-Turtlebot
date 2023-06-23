@@ -1,0 +1,9 @@
+# Define the goal
+float32 goal_x  
+float32 goal_y
+---
+# Define the result
+bool success
+---
+# Define a feedback message
+float32 dist_to_goal
