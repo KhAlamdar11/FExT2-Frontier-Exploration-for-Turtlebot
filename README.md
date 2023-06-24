@@ -4,6 +4,7 @@ This package provides a frontier exploration pipeline for Turtlebot2. Six candid
 
 ## Dependencies:
 - pip install scikit-image
+- actionlib
 
 ## HOW TO RUN:
 
