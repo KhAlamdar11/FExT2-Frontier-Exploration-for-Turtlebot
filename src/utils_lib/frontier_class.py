@@ -14,7 +14,7 @@ from skimage import measure, draw
 
 
 class FrontierDetector:
-    def __init__(self):
+    def __init__(self, robot_size):
 
         self.entropy = 0
 
@@ -26,7 +26,7 @@ class FrontierDetector:
         self.occupancy_map = None
 
         # length of the robot: Used as dilation param for obstacles
-        self.robot_len = 0.22
+        self.robot_len = robot_size
 
         # Current robot pose [x, y, yaw]            
         self.current_pose = None

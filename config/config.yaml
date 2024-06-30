@@ -1,0 +1,45 @@
+#__________________  Frontier Params  __________________
+
+# Criterion for selecting candidate points for exploration.
+# Options:
+#   0 - nearest frontier
+#   1 - farthest frontier
+#   2 - maximum area
+#   3 - maximum information gain (entropy based)
+#   4 - biggest cluster
+#   5 - distance weighted information gain
+frontier_selection_criterion: 1
+
+# Input topics for subscribing to necessary data.
+topics:
+  projected_map: "/projected_map"  
+  odom: "/odom"                   
+
+# Maximum length of the robot in meters. This parameter is used for planning and collision avoidance.
+robot_size: 0.22 
+
+#__________________  Planner/Controller Params  __________________
+
+# Configuration for the path planner.
+# Options include various path planning algorithms such as:
+#   'RRTStarOMPL', 'InRRTStar-', 'FMT-', 'BIT-', 'InRRTStar-Dubins', 'FMT-Dubins', 'BIT-Dubins', 
+#   'InRRTStar-BSpline', 'FMT-BSpline', 'BIT-BSpline'
+planner_config: 'BIT-'
+
+# Flag to determine if a curved controller should be used.
+curved_controller: False
+
+# Controller parameters for controlling the robot's movement.
+controller:
+  Kv: 0.5  # Proportional gain for linear velocity (if curved_controller=False).
+  Kw: 0.5  # Proportional gain for angular velocity (if curved_controller=False).
+  Kp: 10    # Proportional gain for the curved controller (if curved_controller=True).
+  Ki: 10    # Integral gain for the curved controller (if curved_controller=True).
+  Kd: 10    # Derivative gain for the curved controller (if curved_controller=True).
+  dt: 0.05  # Time step for the controller update.
+
+  v_max: 0.15  # Maximum linear velocity in meters per second.
+  w_max: 0.3   # Maximum angular velocity in radians per second.
+
+# The planning dominion, specifying the minimum and maximum x and y coordinates
+dominion: [-15.0, 15.0]

@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Path1
       Splitter Ratio: 0.3962264060974121
     Tree Height: 763
   - Class: rviz/Selection
@@ -147,10 +146,18 @@ Visualization Manager:
       Value: true
     - Class: rviz/Marker
       Enabled: true
-      Marker Topic: /turtlebot_online_path_planning/path_marker
-      Name: Path
+      Marker Topic: /path_marker
+      Name: Marker
       Namespaces:
-        {}
+        path: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /frontier_detection/vis_points
+      Name: MarkerArray
+      Namespaces:
+        "": true
       Queue Size: 100
       Value: true
   Enabled: true

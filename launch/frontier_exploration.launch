@@ -31,6 +31,8 @@
         <remap to="/laserscan_to_pointcloud/converted_pc" from="/cloud_in"/>
     </node>
 
+    <rosparam file="$(find FExT2)/config/config.yaml" command="load" />
+
     <!-- <node pkg="FExT2" type="move_to_pt.py" name="move_to_pt"/> -->
     <!-- <node pkg="FExT2" type="frontier_exploration.py" name="frontier_exploration"/> -->
     
