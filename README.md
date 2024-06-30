@@ -50,8 +50,8 @@ rosrun FExT2 frontier_exploration.py
 
 ## Parameters:
 
-Different frontier-related, planner, and controller parameters can be modifed in ```/config/config.yaml``` file. Descriptions are povided in this file while detailed descriptions are available in the Note: For further technical details, please consult the [wiki](https://github.com/KhAlamdar11/FExT2-Frontier-Exploration-for-Turtlebot/wiki) tab of this repository.
- of this repo.
+Different frontier-related, planner, and controller parameters can be modified in the ```/config/config.yaml``` file. Descriptions are provided in this file, while detailed descriptions are available in the [wiki](https://github.com/KhAlamdar11/FExT2-Frontier-Exploration-for-Turtlebot/wiki) tab of this repository.
+
 
 ## Authors:
 
