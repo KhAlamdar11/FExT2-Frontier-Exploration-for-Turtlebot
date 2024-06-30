@@ -21,8 +21,8 @@ from utils_lib.state_validity_checker import *
 from utils_lib.path_planners import *
 from utils_lib.controllers import *
 # import posePoint.srv
-from frontier_explorationb.srv import posePoint
-from frontier_explorationb.msg import go_to_pointAction, go_to_pointGoal, go_to_pointFeedback, go_to_pointResult 
+from FExT2.srv import posePoint
+from FExT2.msg import go_to_pointAction, go_to_pointGoal, go_to_pointFeedback, go_to_pointResult 
 
 class OnlinePlanner:
 

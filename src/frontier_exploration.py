@@ -16,8 +16,8 @@ from std_srvs.srv import Trigger, TriggerRequest
 
 # action related imports
 import actionlib
-from frontier_explorationb.srv import posePoint
-from frontier_explorationb.msg import go_to_pointAction, go_to_pointGoal
+from FExT2.srv import posePoint
+from FExT2.msg import go_to_pointAction, go_to_pointGoal
 
 # include other files
 from utils_lib.frontier_class import FrontierDetector
