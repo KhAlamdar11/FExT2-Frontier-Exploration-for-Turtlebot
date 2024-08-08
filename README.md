@@ -10,6 +10,10 @@ This package offers a comprehensive frontier exploration (2D) pipeline tailored 
 
 Note: For further theoretical and technical details, please consult the [wiki](https://github.com/KhAlamdar11/FExT2-Frontier-Exploration-for-Turtlebot/wiki) tab of this repository.
 
+<div align="center">
+    <img src="/media/animation.gif" alt="testing" height="300">
+</div>
+
 ## Installation
 
 1. **Dependencies**: Ensure ROS (Robot Operating System) and Python 3 are installed on your system. Additionally, install:
